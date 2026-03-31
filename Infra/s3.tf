@@ -1,8 +1,8 @@
 resource "aws_s3_bucket" "Remote-s3" {
-  bucket = "Terra-infra"
+  bucket = "${var.env}-${var.bucket_name}"
 
   tags={
-    Name = "Terra-infra"
-    Environment = "dev"
+    Name = "${var.env}-${var.bucket_name}"
+    Environment = var.env
   }
 }
