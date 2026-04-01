@@ -27,3 +27,8 @@ variable "ec2_deafult_root_storage_size" {
    description = "This is EC2 insatance Storage Size"
   type = number
 }
+
+variable "hash_key" {
+  description = "This is a Hask Key of Dynamodb"
+  type = string
+}
